@@ -1,0 +1,15 @@
+# Agents evolve
+
+> An opinion article by Zachary D. Michels about automation as a product that learns through use.
+
+## Article
+
+- [Automation as a product that learns](https://zmichels.github.io/agents-evolve/): RPA's continuing role in hybrid workflows, portable decision records, decision-state mapping, and tested improvements within delegated authority.
+- [Article source and revision history](https://github.com/zmichels/agents-evolve): Markdown, illustration, and GitHub Pages site.
+
+## Related exploratory work
+
+- [Decision-PGA article series](https://zmichels.github.io/decision-pga-pages/article/): Decision-state diagnostics and the geometry of observed support for explicit choices.
+- [Decision-PGA code and examples](https://github.com/zmichels/Decision-PGA): Exploratory tools to adapt to a workflow, rather than a prescribed architecture or proof of correctness.
+
+The article presents a design perspective. Its workflow examples are illustrative, and its decision-state diagnostics do not establish correctness or authorize production changes.

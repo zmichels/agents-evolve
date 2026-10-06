@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% assign page_title = page.title | default: site.title %}
+    {% assign page_description = page.description | default: site.description %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page_title | escape }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <meta name="author" content="{{ site.author | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | absolute_url }}">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="{{ '/llms.txt' | absolute_url }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page_title | escape }}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ page_title | jsonify }},
+      "description": {{ page_description | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "datePublished": {{ page.date_published | jsonify }},
+      "dateModified": {{ page.date_modified | jsonify }},
+      "author": { "@type": "Person", "name": {{ site.author | jsonify }} }
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#article">Skip to article</a>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">Agents evolve</a>
+      <nav aria-label="Primary navigation">
+        <a href="https://zmichels.github.io/decision-pga-pages/article/">Decision-PGA series</a>
+        <a href="https://github.com/zmichels/agents-evolve">GitHub</a>
+      </nav>
+    </header>
+    <main id="article" class="page">
+      <article>{{ content }}</article>
+    </main>
+    <footer class="site-footer">
+      <p>By {{ site.author | escape }} · <a href="https://github.com/zmichels/agents-evolve">Source &amp; revision history</a></p>
+    </footer>
+  </body>
+</html>

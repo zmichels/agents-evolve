@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light;
+  --ink: #172033;
+  --muted: #5d687a;
+  --line: #dbe1ea;
+  --accent: #174a59;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+a { color: var(--accent); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: .12em; }
+a:focus-visible { outline: 3px solid #28766b; outline-offset: 4px; }
+.skip-link { position: absolute; top: -5rem; left: 1rem; background: #fff; padding: .5rem 1rem; }
+.skip-link:focus { top: .5rem; }
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .6rem 1.5rem;
+  padding: 1rem clamp(1.25rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+}
+.brand { color: var(--ink); font-weight: 750; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-size: .94rem; }
+nav a { color: var(--muted); }
+.page { max-width: 920px; margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 2.5rem); }
+h1 { margin: 0 0 1.25rem; font-size: clamp(2.3rem, 6vw, 4.1rem); line-height: 1.08; letter-spacing: -.025em; }
+h2 { margin-top: 2.8rem; font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.25; }
+p, li { font-size: 1.06rem; }
+.article-meta { color: var(--muted); font-size: .96rem; margin-bottom: 2.25rem; }
+.article-meta em { font-style: normal; }
+img { display: block; width: 100%; height: auto; margin-top: 2rem; }
+.figure-caption { color: var(--muted); font-size: .94rem; line-height: 1.5; margin-top: .7rem; }
+blockquote { margin: 1.5rem 0; padding: .15rem 1.25rem; border-left: 3px solid #8fb9af; background: #f5f8fa; }
+.site-footer { max-width: 840px; margin: 0 auto; padding: 1.5rem 1.25rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); }
+.site-footer p { font-size: .9rem; }
+@media print {
+  .site-header, .skip-link { display: none; }
+  .page { max-width: none; padding: 0; }
+  h1 { font-size: 2.4rem; }
+  h2 { break-after: avoid; }
+  img, blockquote { break-inside: avoid; }
+}

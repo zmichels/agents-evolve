@@ -1,0 +1,11 @@
+title: Automation as a product that learns
+description: A perspective on learning through use as a production capability of agentic automation
+url: "https://zmichels.github.io"
+baseurl: "/agents-evolve"
+author: "Zachary D. Michels"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - LICENSE
+  - notes/
