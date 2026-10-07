@@ -4,7 +4,7 @@
 
 ## Article
 
-- [Automation as a product that learns](https://zmichels.github.io/agents-evolve/): RPA's continuing role in hybrid workflows, portable decision records, decision-state mapping, and tested improvements within delegated authority.
+- [Automation as a product that learns](https://zmichels.github.io/agents-evolve/): RPA's continuing role in hybrid workflows, development ledgers as portable project and organizational memory, decision-state mapping, and tested improvements within delegated authority.
 - [Article source and revision history](https://github.com/zmichels/agents-evolve): Markdown, illustration, and GitHub Pages site.
 
 ## Related exploratory work

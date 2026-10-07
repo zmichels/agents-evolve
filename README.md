@@ -23,6 +23,7 @@ To update the article, edit `index.md`, update its `date_modified`, and push to 
 - Treat HOTL as process oversight that can contain individual HITL escalations.
 - Frame human-out-of-the-loop execution as an ambition, with evidence and reversible delegation determining the scope.
 - Present Decision-PGA articles, code, and examples as exploratory starting points. Adapt ledger designs to explicit workflow goals, with room for finer detail, links across scales, and evaluated updates; distinguish workflow learning from model retraining.
+- Treat development ledgers as portable project and organizational memory in their own right. External long-term memory preserves context for future work; retrieval, review, and tested application make that context useful for learning.
 - Keep examples hypothetical unless supported by an approved, attributable case study.
 - Keep the public article free of internal project details. Retain the public Decision-PGA series links and the requested, source-backed Langfuse acknowledgment without making the argument vendor-dependent.
 

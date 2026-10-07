@@ -2,7 +2,7 @@
 layout: default
 title: Automation as a product that learns
 date_published: "2026-10-06"
-date_modified: "2026-10-06"
+date_modified: "2026-10-07"
 ---
 
 # Automation as a product that learns
@@ -76,6 +76,14 @@ Within a run, we can examine how a lookup or verification step changes support f
 For example, repeated mapping exceptions may appear to share one cause. Linked records reveal that some lack a source, while others remain ambiguous even with that source present. Decision-state observations help investigate those differences; evaluated outcomes establish whether a new lookup or check actually helps. The resulting lesson returns to the ledger, available for the next investigation and improvement.
 
 Platforms support collection, review, and testing. The ledger design and geometric diagnostics add the workflow-specific interpretation described here; they are not automatic consequences of tracing. Stable decision support still needs correctness checks, and simpler measures may be sufficient. The aim is a useful, evolving map of decisions, their relationships, and the knowledge that makes them dependable.
+
+## Give the project a memory of its own
+
+The ledger also helps the people and agents building the product. Development accumulates context: why an approach was chosen, what failed, which constraint came from a stakeholder, and what still needs checking. Much of it lives in conversations and working sessions. Recording that context with its sources, status, and scope gives the project a durable memory that survives a closed chat or a change of team.
+
+This is a practical way to offload context. A new collaborator can recover the reasoning behind a choice without reconstructing every conversation. A record might explain why a shortcut failed, link the test, and say when the decision should be revisited. Those records can travel with the project and contribute to organizational memory, while preserving where each lesson applies and what remains uncertain.
+
+For learning, the ledger provides a form of external long-term memory. Capturing an experience makes it available for later use. Retrieving it, checking its relevance, and testing an improvement turn that memory into changed behavior. The record can support that work during development, inside the running product, or both.
 
 A practical starting point is to give an agent the [articles](https://github.com/zmichels/decision-pga-pages) and [code and examples](https://github.com/zmichels/Decision-PGA), together with a specific goal. Ask it to consider what fits the work, explain its choices, and build the smallest useful record. A coding assistant can develop that record alongside the application as decisions emerge. The same approach can inform tools a running agent uses to consult history, add observations, and propose updates.
 
